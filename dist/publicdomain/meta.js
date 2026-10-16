@@ -26,3 +26,8 @@ async function getMeta(args) {
     };
   }
 }
+
+// CommonJS exports for the unictoos sandbox
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports.getMeta = getMeta;
+}

@@ -7,3 +7,8 @@ async function getCatalog(args) {
     { title: 'Classics', filter: 'classics' },
   ];
 }
+
+// CommonJS exports for the unictoos sandbox
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports.getCatalog = getCatalog;
+}

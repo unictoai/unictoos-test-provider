@@ -49,3 +49,9 @@ async function getSearchPosts(args) {
     return toPost(f[0], f[1], f[2]);
   });
 }
+
+// CommonJS exports for the unictoos sandbox
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports.getPosts = getPosts;
+  module.exports.getSearchPosts = getSearchPosts;
+}

@@ -41,3 +41,8 @@ async function getStream(args) {
     return [];
   }
 }
+
+// CommonJS exports for the unictoos sandbox
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports.getStream = getStream;
+}
