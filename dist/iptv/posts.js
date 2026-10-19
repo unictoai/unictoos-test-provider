@@ -80,7 +80,7 @@ function toPost(filter, ch) {
     title: ch.name,
     image: ch.logo,
     link: 'iptv|' + filter + '|' + ch.index,
-    tag: 'Live TV'
+    tag: 'Live'
   };
 }
 
