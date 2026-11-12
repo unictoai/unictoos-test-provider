@@ -3,7 +3,7 @@
 // parsed and probe-checked at build time (see README.md).
 // The sandbox calls this export by the exact name `catalog`.
 
-var CATALOGS = [{"title":"World News","filter":"verified"},{"title":"News","filter":"news"},{"title":"India","filter":"in"},{"title":"United Kingdom","filter":"uk"},{"title":"United States","filter":"us"},{"title":"All Channels","filter":"all"}];
+var CATALOGS = [{"title":"World News","filter":"verified"},{"title":"News","filter":"news"},{"title":"Pakistan","filter":"pk"},{"title":"India","filter":"in"},{"title":"United Kingdom","filter":"uk"},{"title":"United States","filter":"us"},{"title":"All Channels","filter":"all"}];
 
 async function catalog(args) {
   return CATALOGS;
