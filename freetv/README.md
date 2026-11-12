@@ -37,19 +37,22 @@ were upgraded to https:// where the https endpoint answered
 connection error (code 000) got one plain-GET retry, because
 some small hosts refuse concurrent Range requests.
 
-Hindu religious channels are REMOVED by a hand-reviewed name
-list (53 removed in this build). Other
-religious channels (Islamic, Christian, Sikh, Jain) are kept.
+All non-Islamic religious channels (every faith) and all
+non-Islamic Indian channels are REMOVED by the hand-reviewed
+sets in removal_sets_v120.json (634 removed in this build).
+Islamic religious channels are KEPT, even Indian ones
+(Peace TV Bangla, Peace TV Urdu, Zainabia Channel, Huda TV,
+Alabbassia TV, Madani Channel Urdu). Pakistan channels stay.
 
 Catalogs (small first — the Live TV tab loads them in order):
 
-- World News (`verified`): 6 channels
-- News (`news`): 31 channels
-- Pakistan (`pk`): 33 channels
-- India (`in`): 624 channels
+- World News (`verified`): 5 channels
+- News (`news`): 30 channels
+- Pakistan (`pk`): 23 channels
+- India (`in`): 2 channels
 - United Kingdom (`uk`): 30 channels
 - United States (`us`): 22 channels
-- All Channels (`all`): 1622 channels
+- All Channels (`all`): 988 channels
 
 ## Honest limits
 
@@ -63,6 +66,7 @@ Catalogs (small first — the Live TV tab loads them in order):
 - URLs rotate and die. Re-run the generator to refresh; the
   probe drops anything that stops answering.
 - The seed "World News" list is official broadcaster HLS
-  (Al Jazeera, France 24, DW, CBS News, Sky News Arabia,
-  NDTV 24x7, India Today) — checked from the sandbox, not
-  from Pakistan.
+  (Al Jazeera, France 24, DW, CBS News, Sky News Arabia) —
+  checked from the sandbox, not from Pakistan. NDTV 24x7 and
+  India Today were seeds in v1.0.0/v1.1.0 and were removed in
+  v1.2.0 (both are Indian channels).
