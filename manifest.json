@@ -11,11 +11,5 @@
     "display_name": "IPTV",
     "version": "1.1.0",
     "type": "live"
-  },
-  {
-    "value": "iptvall",
-    "display_name": "IPTV All",
-    "version": "1.0.0",
-    "type": "live"
   }
 ]
